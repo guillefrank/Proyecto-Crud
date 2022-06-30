@@ -41,7 +41,12 @@ ul {
 }
 
 .row {
-  background-image: url("https://pbs.twimg.com/media/DQum78SUMAIqYzS?format=jpg&name=large");
+  background: rgb(249, 250, 247);
+  background: linear-gradient(
+    90deg,
+    rgba(249, 250, 247, 1) 10%,
+    rgba(253, 255, 69, 1) 79%
+  );
 }
 .col {
   margin: 2em;
