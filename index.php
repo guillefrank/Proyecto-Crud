@@ -21,7 +21,7 @@
 
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <title>Pokedex</title>
     <meta charset="utf-8" />

@@ -11,7 +11,8 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto Login</title>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
@@ -25,7 +26,7 @@ session_start();
 <body>
     <header>
         <div class="topnav">
-          
+
             <a href="#">Editar</a>
             <a href="partials/logout.php">Cerrar Sesion</a>
             <a href="index.php" class="split">Api</a>
@@ -40,7 +41,7 @@ session_start();
 
                 <div id="top-header">
 
-                 <h5> BIENVENIDO: <?=$_SESSION['user_id'];?> </h5>
+                    <h5> BIENVENIDO: <?=$_SESSION['user_id'];?> </h5>
 
                 </div>
 
@@ -72,17 +73,17 @@ session_start();
                                 $lista->execute();
                                 $usuarios = $lista->fetchAll(PDO::FETCH_ASSOC);
                                 foreach ($usuarios as $usuario) { ?>
-                                    <tr>
-                                        <td>
-                                            <?php echo $usuario['nombre']; ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $usuario['email']; ?>
-                                        </td>
-                                        <td>
-                                            <?php echo substr($usuario['password'], -6); ?>
-                                        </td>
-                                    </tr>
+                                <tr>
+                                    <td>
+                                        <?php echo $usuario['nombre']; ?>
+                                    </td>
+                                    <td>
+                                        <?php echo $usuario['email']; ?>
+                                    </td>
+                                    <td>
+                                        <?php echo substr($usuario['password'], -6); ?>
+                                    </td>
+                                </tr>
 
                                 <?php } ?>
                         </table>
@@ -92,12 +93,14 @@ session_start();
                         </form>
                     </div>
                 </div>
-            </div>
-            <footer>
-                <div class="footer">
-                    <h7>Ⓒ 2022 - Proyecto Login. Desarrollo web by New Team Delevopers.</h7>
-                </div>
-            </footer>
+        </div>
+    </div>
+<footer>
+    <div class="mt-5 p-4 bg-dark text-white text-center">
+        <h7>Ⓒ 2023 - Proyecto Login. Desarrollo web by New Team Delevopers.</h7>
+    </div>
+</footer>
 </body>
+
 
 </html>
