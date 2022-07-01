@@ -106,3 +106,25 @@ button {
 #olvCon {
   margin-bottom: 12px;
 }
+
+.caja {
+  margin-top: -20%;
+}
+#motion-demo {
+  
+  offset-path: path('m 100 0 h 100 v 0');
+  animation: move 3000ms infinite alternate ease-in-out;
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/poke.gif");
+  background-size: contain;
+}
+
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}

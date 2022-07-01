@@ -43,16 +43,16 @@
 
                 <form class="col-12" action="new.php" method="post">
                     <div class="form-group">
-                        <input id="userGroup" name="nombre" class="form-control" type="text" placeholder="Nombre completo" />
+                        <input id="userGroup" name="nombre" class="form-control" type="text" placeholder="Nombre completo"required />
                     </div>
                     <div class="form-group">
-                        <input id="email" name="email" class="form-control" type="email" placeholder="Correo elecronico" />
+                        <input id="email" name="email" class="form-control" type="email" placeholder="Correo elecronico"required />
                     </div>
                     <div class="form-group">
-                        <input id="contrasena" name="password" class="form-control" type="password" placeholder="Contraseña" />
+                        <input id="contrasena" name="password" class="form-control" type="password" placeholder="Contraseña" required/>
                     </div>
 
-                    <select class="form-select" id="rol" name="rol">
+                    <select class="form-select" id="rol" name="rol" required>
                         <option selected>Roles</option>
                         <option type= "text" value="administrativo">Administrativo</option>
                         <option type= "text" value="encargado">Encargado</option>
@@ -70,7 +70,7 @@
         </div>
 
     </div>
-    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity  w3-xlarge">
         <h7>Ⓒ 2022 - Proyecto Login. Desarrollo web by New Team Delevopers.</h7>
     </footer>  
 </body>

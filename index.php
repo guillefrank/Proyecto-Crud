@@ -45,6 +45,8 @@ require 'partials/login.php'
         </div>
     </header>
     <div class="modal-dialog text-center">
+    
+
         <div class="col-sm-8 main-section">
             <div class="modal-content">
                 <div class="col-12 user-img">
@@ -53,7 +55,7 @@ require 'partials/login.php'
                 <form class="col-12" action="listUser.php" method="post">
                     <div class="form-group">
                         <h3>BIENVENIDO</h3>
-                        <h3>Que desea?</h3>
+                        <h4>Ingresar o Registrate</h4>
                     </div>
 
 
@@ -70,8 +72,11 @@ require 'partials/login.php'
             </div>
         </div>
     </div>
+    <div class="caja">
+    <div id="motion-demo"></div>
+    </div>
     
-    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity  w3-xlarge">
         <h7>Ⓒ 2022 - Proyecto Login. Desarrollo web by New Team Delevopers.</h7>
     </footer>        
   
