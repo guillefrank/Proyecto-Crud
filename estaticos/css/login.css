@@ -109,22 +109,24 @@ button {
 
 .caja {
   margin-top: -20%;
+  animation-timing-function: reverse;
 }
 #motion-demo {
   
-  offset-path: path('m 100 0 h 100 v 0');
-  animation: move 3000ms infinite alternate ease-in-out;
+  /* offset-path: path('m 100 0 h 100 v 0');
+  animation: move 3000ms infinite alternate ease-in-out; */
   width: 200px;
   height: 200px;
   background-image: url("../img/poke.gif");
   background-size: contain;
+  position: relative;
+  animation: move 5s infinite;
+  animation-direction: reverse;  
 }
 
 @keyframes move {
-  0% {
-    offset-distance: 0%;
-  }
-  100% {
-    offset-distance: 100%;
-  }
+  
+    from {left: 0%;}
+    to {left: 100%;}
+  
 }
