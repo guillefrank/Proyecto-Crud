@@ -10,7 +10,9 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto Login</title>
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
@@ -29,7 +31,7 @@ session_start();
 
             <a href="#">Editar</a>
             <a href="partials/logout.php">Cerrar Sesion</a>
-            <a href="index.php" class="split">Api</a>
+            <a href="main.php" class="split">Api</a>
         </div>
     </header>
     <div class="modal-dialog text-center">
@@ -55,51 +57,50 @@ session_start();
                             ?>
                         </form>
 
-                        <br>
-                        <h2 class="listUsuarios">LISTA DE USUARIOS</h2>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="usuario">Usuario</th>
-                                    <th class="correo">Correo Electronico </th>
-                                    <th class="contra">Contraseña</th>
+                            <br>
+                            <h2 class="listUsuarios">LISTA DE USUARIOS</h2>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="usuario">Usuario</th>
+                                        <th class="correo">Correo Electronico </th>
+                                        <th class="contra">Contraseña</th>
 
 
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php
-                                $lista = $link->prepare("SELECT * FROM users");
-                                $lista->execute();
-                                $usuarios = $lista->fetchAll(PDO::FETCH_ASSOC);
-                                foreach ($usuarios as $usuario) { ?>
-                                <tr>
-                                    <td>
-                                        <?php echo $usuario['nombre']; ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $usuario['email']; ?>
-                                    </td>
-                                    <td>
-                                        <?php echo substr($usuario['password'], -6); ?>
-                                    </td>
-                                </tr>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    $lista = $link->prepare("SELECT * FROM users");
+                                    $lista->execute();
+                                    $usuarios = $lista->fetchAll(PDO::FETCH_ASSOC);
+                                    foreach ($usuarios as $usuario) { ?>
+                                    <tr>
+                                        <td>
+                                            <?php echo $usuario['nombre']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $usuario['email']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo substr($usuario['password'], -6); ?>
+                                        </td>
+                                    </tr>
 
-                                <?php } ?>
-                        </table>
+                                    <?php } ?>
+                            </table>
 
 
 
                         </form>
                     </div>
                 </div>
-        </div>
-    </div>
-<footer>
-    <div class="footer">
-        <h7>Ⓒ 2023 - Proyecto Login. Desarrollo web by New Team Delevopers.</h7>
-    </div>
-</footer>
+            </div>
+         </div>
+     </div>
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+        <h7>Ⓒ 2022 - Proyecto Login. Desarrollo web by New Team Delevopers.</h7>
+    </footer>  
 </body>
 
 

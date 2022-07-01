@@ -22,7 +22,7 @@
     <header>
 
         <div class="topnav">
-        <a href="welcome.php">Inicio</a>
+        <a href="index.php">Inicio</a>
             <a href="new.php">Registrarse</a>
             <a href="login.php">Login</a>
             <a href="forgotpass.php">ForgotPassword</a>

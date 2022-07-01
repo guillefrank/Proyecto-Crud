@@ -6,6 +6,7 @@ body {
     rgba(253, 255, 69, 1) 79%
   );
 }
+
 .topnav {
   overflow: hidden;
   background-color: #ffc107;
@@ -91,7 +92,7 @@ button {
   text-shadow: 1px 1px 1px rgb(116, 116, 116);
 }
 
-.footer {
+/* .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -100,7 +101,7 @@ button {
   color: white;
   padding-top: 1em;
   padding-bottom: 1em;
-}
+} */
 
 #olvCon {
   margin-bottom: 12px;

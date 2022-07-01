@@ -5,5 +5,5 @@
 
   session_destroy();
 
-  header('Location: /Proyecto-Crud/welcome.php');
+  header('Location: /Proyecto-Crud/index.php');
 ?>

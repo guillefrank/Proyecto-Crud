@@ -18,7 +18,9 @@ require 'partials/login.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto Login</title>
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -33,9 +35,9 @@ require 'partials/login.php';
 <body>
     <header>
         <div class="topnav">
-            <a href="welcome.php">Inicio</a>
+            <!-- <a href="index.php">Inicio</a>
             
-            <a href="index.php" class="split">Api</a>
+            <a href="index.php" class="split">Api</a> -->
         </div>
     </header>
     <div class="modal-dialog text-center">
@@ -60,11 +62,9 @@ require 'partials/login.php';
             </div>
         </div>
     </div>
-    <footer>
-        <div class="footer">
-            <h7>Ⓒ 2022 - Proyecto Login. Desarrollo web by New Team Delevopers.</h7>
-        </div>
-    </footer>
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+        <h7>Ⓒ 2022 - Proyecto Login. Desarrollo web by New Team Delevopers.</h7>
+    </footer>  
 </body>
 
 
