@@ -43,24 +43,24 @@
       <h1 id="pokemonTitulo"><br> POKEDEXITA </h1></br>
     </div>
 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <div class="container-fluid">
-        <ul class="navbar-nav">
-        
-          <form class="d-flex" name="form">
-         
-            <input
-              class="form-control me-2"
-              type="text"
-              name="nombrePokemon"
-              placeholder="Ingrese nombre o ID"
-            />
-            <button class="btn btn-warning" type="submit">Buscar</button>
-            
-            
-          </form>
-        </ul>
-      </div>
+    <nav class="lista">
+      
+        <div clas="d-flex justify-content-between">
+               
+            <form class="d-flex " name="form">
+              <a class="btn btn-warning" type="submit"><h5> BIENVENID@ <?=$_SESSION['user_id'];?> </h5></a>
+              <input
+                class="form-control"
+                type="text"
+                name="nombrePokemon"
+                placeholder="Ingrese nombre o ID"
+              />              
+              <button class="btn btn-warning" type="submit" >Buscar</button>
+              <a class="btn btn-warning" type="submit" href="partials/logout.php">Cerrar Sesion</a>
+              
+              
+            </form>
+        </div>
     </nav>
 
     <div class="container-fluid" id="ver">
@@ -68,13 +68,13 @@
       <div class="row">
         <div class="col">
           <div class="img-responsive carta">
-            <img src="" alt="">
+            
             <h2 id="TitPok"><u>POKEMON</u></h2>
             <h2 id="nombre">Onix</h2>
             <div class="fakeimg">
               <img
                 id="pokefoto"
-                class="img-responsive fit-image border border-dark border border-5 pokefoto"
+                class="img-responsive fit-image  pokefoto"
                 alt=""
                 src="https://img.pokemondb.net/sprites/black-white/anim/normal/onix.gif"
               />

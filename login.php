@@ -46,10 +46,10 @@ require 'partials/login.php';
                 </div>
                 <form class="col-12" action="login.php" method="post">
                     <div class="form-group">
-                        <input id="userGroup" name="email" class="form-control" type="text" placeholder="Ingrese Usuario" />
+                        <input id="userGroup" name="email" class="form-control" type="text" placeholder="Ingrese email" required />
                     </div>
                     <div class="form-group">
-                        <input id="contrasena" name="password" class="form-control" type="password" placeholder="Contraseña" />
+                        <input id="contrasena" name="password" class="form-control" type="password" placeholder="Contraseña" required/>
                     </div>
                    <button type="submit" id="inicioSesion" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Iniciar Sesion
                     </button>

@@ -96,7 +96,7 @@ session_start();
         </div>
     </div>
 <footer>
-    <div class="mt-5 p-4 bg-dark text-white text-center">
+    <div class="footer">
         <h7>Ⓒ 2023 - Proyecto Login. Desarrollo web by New Team Delevopers.</h7>
     </div>
 </footer>

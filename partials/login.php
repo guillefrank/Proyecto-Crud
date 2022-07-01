@@ -13,7 +13,9 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
     $_SESSION['user_id'] = $results['nombre'];
     header("Location: listUser.php");
   } else {
-    echo "<script type='text/javascript'>alert('la contraseña es incorrecta, ingrese nuevamente');</script>";
-  
+    echo "<script type='text/javascript'> alert('la contraseña es incorrecta, ingrese nuevamente');</script>";
+    header("Location: login.php");
+    echo "<script type='text/javascript'> alert('la contraseña es incorrecta, ingrese nuevamente');</script>";
+    
   }
 }

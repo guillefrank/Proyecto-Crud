@@ -3,23 +3,25 @@
   margin: 2%;
 }
 .fakeimg {
-  margin-right: auto;
-  margin-left: auto;
-  width: 30%;
-  height: 30%;
-  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  margin-left: 21%;
+  margin-right: 10%;
+  width: 22%;
+  
 }
 .fit-image {
   width: 100%;
   object-fit: cover;
 }
 .carta {
-  background-color: rgb(224, 54, 24);
-  width: 40%;
+  background-image:url("../img/pokedex.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
-  border: 3px solid black;
-  box-shadow: 5px 5px 2px #333;
+  
 }
 ul {
   text-align: left;
@@ -64,15 +66,14 @@ ul {
   background-position: center;
   width: auto;
   text-shadow: 1px 1px black, 1px 1px black;
+  background-size: 90%;
 }
 
-#pokemonTitulo {
+/* #pokemonTitulo {
   font-size: 8em;
-}
+} */
 
-img {
-  background-color: wheat;
-}
+
 
 .grande {
   height: 50%;
