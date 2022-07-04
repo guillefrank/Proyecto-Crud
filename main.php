@@ -67,6 +67,9 @@
     </nav>
 
     <div class="container-fluid" id="ver">
+    <div class="">
+      <img src="estaticos/img/pokeball.gif" width="300px">
+    </div>
       <div class="img"></div>
       <div class="row">
         <div class="col">
